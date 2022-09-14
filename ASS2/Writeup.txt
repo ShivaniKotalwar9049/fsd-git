@@ -1,0 +1,5 @@
+1. Add 7 to 8 email ids in the Linked list and declare and define a boolean variable "found=false".
+2. Ask user to enter the email id he want to search.
+3. Traverce throught the linked list and use equals() function to find out if the mail id is present in the linked list or not. If found then print mail id foud.
+4. If we found the mail id with equals() function the change value of found from false to true.
+5. Come out of the loop and check if found variable is true or false. If the variable is false then we dont have the entry of the mail id entered by user in our database. Print that the mail id not found.

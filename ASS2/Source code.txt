@@ -1,0 +1,44 @@
+package first1;
+import java.util.*;
+public class emailVerification {
+
+	public static void main(String[] args) {
+		
+
+		Scanner sc=new Scanner(System.in);
+		LinkedList<String> Mail=new LinkedList<String>();
+		
+		Mail.add("shivanikotalwar8888@gmail.com");
+		Mail.add("krishnakotalwar@gmail.com");
+		Mail.add("shubhangikotalwar@gmail.com");
+		Mail.add("shivrah123@gmail.com");
+		Mail.add("shreenath098@gmail.com");
+		Mail.add("shantaprabhakaran778@gmail.com");
+		Mail.add("Prabhakarkotalwar@9087@gmail.com");
+		
+		System.out.println("Enter email ID");
+		boolean found=false;
+		String mailid=sc.nextLine();
+		
+		for(int i=0;i<Mail.size();i++)
+		{
+			if(Mail.get(i).equals(mailid))
+			{
+				found=true;
+				System.out.println("The mail ID you entered presents in our database.");
+				break;
+			}
+			
+		}
+		
+		if(found==false)
+		{
+			System.out.println("The mail ID you entered is not present in our database.");
+		}
+		
+		
+		
+		
+	}
+
+}
